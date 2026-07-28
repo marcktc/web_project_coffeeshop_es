@@ -2,7 +2,7 @@
 
 <html lang="es">
   <head>
-    <title>El Espresso de mi Mel 🌷</title>
+    <title>Triple Espresso</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./styles/normalize.css" />
@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" />
   </head>
 
   <body>
@@ -25,12 +25,12 @@
       />
 
       <nav class="nav">
-        <div class="nav-links">
-          <ul>
-            <li><a href="#reservation">Reservar una mesa</a></li>
-            <li><a href="#contacts">Contactos</a></li>
-          </ul>
-        </div>
+        <ul class="nav__list">
+          <li>
+            <a href="#reservation" class="nav__link">Reservar una mesa</a>
+          </li>
+          <li><a href="#contacts" class="nav__link">Contactos</a></li>
+        </ul>
       </nav>
 
       <h1 class="header-title">
@@ -77,14 +77,14 @@
               required
             />
 
-            <label for="comensales" class="form_label"
+            <label for="number_of_guests" class="form_label"
               >Número de comensales *</label
             >
             <input
               class="form_input"
               type="number"
-              name="comensales"
-              id="comensales"
+              name="number"
+              id="number_of_guests"
               placeholder="1-8"
               min="1"
               max="8"
@@ -168,7 +168,7 @@
         </div>
       </div>
 
-      <p class="footer__copyright">&copy; 2026 To my Mel 🌷</p>
+      <p class="footer__copyright">&copy; 2026 Marco</p>
     </footer>
   </body>
 </html>
